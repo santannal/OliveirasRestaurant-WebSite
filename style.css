@@ -1,0 +1,44 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #d5bdaf, #d6ccc2, #edede9, #f5ebe0, #fff);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.custom-img-home {
+    height: 19rem;
+}
+
+.custom-col-home {
+    max-width: 410px;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #fff;
+    border-radius: 7px;
+    border: 1px solid black;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2px;
+    transition: all 0.3s ease;
+}
