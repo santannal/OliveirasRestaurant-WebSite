@@ -32,3 +32,8 @@ animacao.reveal('.title-food', {
     duration: 2000,
     distance: '90px',
 })
+
+animacao.reveal('.container-fluid.suco', {
+    duration: 2000,
+    distance: '90px',
+})
