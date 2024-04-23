@@ -10,3 +10,25 @@ document.addEventListener('mousemove', function (e) {
 
 //botoes navbar
 
+//animação
+window.animacao = ScrollReveal({ reset: true });
+
+animacao.reveal('.container.home', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.navbar', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.card.prato', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.title-food', {
+    duration: 2000,
+    distance: '90px',
+})

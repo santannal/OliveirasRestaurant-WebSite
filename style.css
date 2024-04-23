@@ -34,11 +34,21 @@
 
 .nav-link:hover {
     color: white;
-    background-color: #fff;
-    border-radius: 7px;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 2px;
     transition: all 0.3s ease;
+}
+
+.title-food {
+    margin-top: 11.5rem;
+}
+
+.custom-pratos {
+    margin-left: 5.5rem;
+}
+
+.custom-img-card {
+    width: 620px;
+    height: 220px;
 }
