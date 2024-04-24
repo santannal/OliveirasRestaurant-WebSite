@@ -45,7 +45,10 @@
 }
 
 .custom-pratos {
-    margin-left: 5.5rem;
+    padding: 5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0.019%;
 }
 
 .custom-img-card {
@@ -54,11 +57,21 @@
 }
 
 .custom-card-suco {
-    margin: 6.2rem;
-    margin-top: 3rem;
+    margin: 6.4%;
+    margin-top: 2.8rem;
+}
+
+.custom-card-suco:hover {
+    padding: 4px;
+    margin: 6%;
+    margin-top: 2.8rem;
 }
 
 .image-card-juice {
     height: 300px;
+}
 
+.card.prato:hover {
+    transition: all 1s;
+    padding: 4px;
 }
