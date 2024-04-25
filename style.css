@@ -62,16 +62,25 @@
 }
 
 .custom-card-suco:hover {
-    padding: 4px;
-    margin: 6%;
-    margin-top: 2.8rem;
+    padding: 2px;
+}
+
+.card.prato:hover {
+    padding: 2px;
 }
 
 .image-card-juice {
     height: 300px;
 }
 
-.card.prato:hover {
-    transition: all 1s;
-    padding: 4px;
+.custom-carousel {
+    margin-top: 7rem;
+}
+
+.carousel-item {
+    height: 33rem;
+}
+
+.carousel-image {
+    height: 100%;
 }

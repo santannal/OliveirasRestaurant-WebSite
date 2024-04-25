@@ -8,8 +8,6 @@ document.addEventListener('mousemove', function (e) {
     background.style.backgroundPositionY = mouseY / window.innerHeight * 100 + '%';
 });
 
-//botoes navbar
-
 //animação
 window.animacao = ScrollReveal({ reset: true });
 
@@ -34,6 +32,16 @@ animacao.reveal('.title-food', {
 })
 
 animacao.reveal('.container-fluid.suco', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.custom-carousel', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.carousel.slide', {
     duration: 2000,
     distance: '90px',
 })
