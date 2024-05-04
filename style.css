@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #d5bdaf, #d6ccc2, #edede9, #f5ebe0, #fff);
+    background: linear-gradient(40deg, #d5bda0, #d6ccc2, #edede9, #f5ebe0, #fff);
     background-size: 400% 400%;
     animation: gradientBackground 10s ease infinite;
     z-index: -1;
@@ -83,4 +83,54 @@
 
 .carousel-image {
     height: 100%;
+}
+
+.figure-img-restaurant {
+    width: 600px;
+    margin-left: 7rem;
+    height: 400px;
+}
+
+.figure-img-qualidade {
+    width: 400px;
+    margin-left: 7rem;
+    height: 350px;
+}
+
+.local-session {
+    background-color: white;
+    width: 98.7vw;
+    align-items: space-around;
+    justify-content: center;
+    padding: 10px;
+}
+
+.local-div {
+    display: flex;
+}
+
+.local-letters {
+    margin: auto;
+    margin-left: 7rem;
+}
+
+.place-text {
+    word-break: inherit;
+    margin-left: 0.8rem;
+    text-align: center;
+}
+
+.place-text-left {
+    word-break: inherit;
+    margin-left: -3.25rem;
+    text-align: center;
+}
+
+.figure {
+    margin-top: 7rem;
+}
+
+.title-estabelecimento {
+    text-align: center;
+    font-weight: 600;
 }

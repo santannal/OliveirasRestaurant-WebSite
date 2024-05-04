@@ -45,3 +45,19 @@ animacao.reveal('.carousel.slide', {
     duration: 2000,
     distance: '90px',
 })
+
+
+animacao.reveal('.container-fluid.local-session', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.local-div', {
+    duration: 2000,
+    distance: '90px',
+})
+
+animacao.reveal('.title-estabelecimento', {
+    duration: 2000,
+    distance: '90px',
+})
