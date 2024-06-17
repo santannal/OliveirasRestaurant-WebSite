@@ -61,3 +61,15 @@ animacao.reveal('.title-estabelecimento', {
     duration: 2000,
     distance: '90px',
 })
+n
+
+animacao.reveal('.contato-session', {
+    duration: 2000,
+    distance: '90px',
+})
+
+/*
+animacao.reveal('.rodape-session', {
+    duration: 500,
+    distance: '90px',
+})*/

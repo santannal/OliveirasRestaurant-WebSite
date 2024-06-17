@@ -43,10 +43,10 @@
                         <a class="nav-link active fs-5" aria-current="page" href="#carouselExampleCaptions">Produtos</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link active fs-5" aria-current="page" href="#">Estabelecimento</a>
+                        <a class="nav-link active fs-5" aria-current="page" href="#estabelecimento">Estabelecimento</a>
                     </li>
                     <li class="nav-item p-2">
-                        <a class="nav-link active fs-5" aria-current="page" href="#">Contato</a>
+                        <a class="nav-link active fs-5" aria-current="page" href="#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -176,6 +176,8 @@
                     licores e doces de amendoim. Aqui está um destaque dos produtos que nós oferecemos:</p>
             </div>
         </div>
+
+        <div class="mark-carousel" id="mark-carousel"></div>
         <div id="carouselExampleCaptions" class="carousel slide mt-5 mb-5 shadow-lg">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -218,9 +220,9 @@
     <!-- SESSION ESTABELECIMENTO-->
 
 
-    <div class="container-fluid local-session mt-5">
+    <div class="container-fluid local-session mt-5" id="estabelecimento">
         <div class="title-estabelecimento fs-1 mt-5">
-            <h1>SOBRE O NOSSO ESTABELECIMENTO</h1>
+            <h1>SOBRE O NOSSO <u>ESTABELECIMENTO</u></h1>
         </div>
         <div class="local-div">
             <div class="place-figure">
@@ -283,6 +285,61 @@
                 </figure>
             </div>
         </div>
+    </div>
+
+    <!--CONTATOS-->
+    <div class="container-md contato-session shadow-lg rounded p-5 bg-light" id="contact" style="margin-top: 150px;">
+        <div class="fs-3">ENTRE EM CONTATO CONOSCO!</div>
+        <div class="row">
+            <div class="col">
+                <div class="fs-5 mt-4 mb-2">Nome</div>
+                <input type="text" id="phone" placeholder="Nome Completo" class="form-control mb-0 text-uppercase"
+                    required />
+            </div>
+            <div class="col">
+                <div class="fs-5 mt-4 mb-2">Email</div>
+                <input type="text" placeholder="Email" class="form-control mb-0 text-uppercase" required />
+            </div>
+        </div>
+        <div class="fs-5 mt-4 mb-2">Mensagem</div>
+        <div class="input-group" style="height: 120px;">
+            <input type="text" style="height: 120px;" class="form-control text-left" aria-label="Sizing example input"
+                placeholder="Insira sua mensagem..." id="clienteNome" required />
+
+        </div>
+
+        <div class="area-botao d-flex justify-content-center mt-5 mb-1">
+            <button type="submit" class="btn btn-outline-secondary shadow-lg w-75" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Enviar Mensagem
+            </button>
+        </div>
+
+    </div>
+
+
+    <!--RODAPÉ-->
+
+    <div class="container rodape-session">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">&copy; 2024 Sant'Anna, Leonardo</p>
+
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#pratos" class="nav-link px-2 text-body-secondary">Pratos</a></li>
+                <li class="nav-item"><a href="#mark-carousel" class="nav-link px-2 text-body-secondary">Produtos</a>
+                </li>
+                <li class="nav-item"><a href="#estabelecimento"
+                        class="nav-link px-2 text-body-secondary">Estabelecimento</a></li>
+            </ul>
+        </footer>
     </div>
 
 
