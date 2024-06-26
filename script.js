@@ -8,6 +8,14 @@ document.addEventListener('mousemove', function (e) {
     background.style.backgroundPositionY = mouseY / window.innerHeight * 100 + '%';
 });
 
+
+//instagram
+
+document.getElementById("btninstagram").addEventListener("click", function () {
+    var urlFacebook = "https://www.instagram.com/leosantannx/"
+    window.open(urlFacebook, "_blank");
+});
+
 //animação
 window.animacao = ScrollReveal({ reset: true });
 
