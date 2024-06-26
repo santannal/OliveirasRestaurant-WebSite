@@ -288,34 +288,30 @@
     </div>
 
     <!--CONTATOS-->
-    <div class="container-md contato-session shadow-lg rounded p-5 bg-light" id="contact" style="margin-top: 150px;">
+    <form action="send_email.php" method="post" class="container-md contato-session shadow-lg rounded p-5 bg-light"
+        id="contact" style="margin-top: 150px;">
         <div class="fs-3">ENTRE EM CONTATO CONOSCO!</div>
         <div class="row">
             <div class="col">
                 <div class="fs-5 mt-4 mb-2">Nome</div>
-                <input type="text" id="phone" placeholder="Nome Completo" class="form-control mb-0 text-uppercase"
-                    required />
+                <input type="text" name="nome" placeholder="Nome Completo" class="form-control mb-0" required />
             </div>
             <div class="col">
                 <div class="fs-5 mt-4 mb-2">Email</div>
-                <input type="text" placeholder="Email" class="form-control mb-0 text-uppercase" required />
+                <input type="email" name="email" placeholder="Email" class="form-control mb-0" required />
             </div>
         </div>
         <div class="fs-5 mt-4 mb-2">Mensagem</div>
         <div class="input-group" style="height: 120px;">
-            <input type="text" style="height: 120px;" class="form-control text-left" aria-label="Sizing example input"
-                placeholder="Insira sua mensagem..." id="clienteNome" required />
-
+            <textarea name="mensagem" style="height: 120px;" class="form-control text-left"
+                aria-label="Sizing example input" placeholder="Insira sua mensagem..." required></textarea>
         </div>
-
         <div class="area-botao d-flex justify-content-center mt-5 mb-1">
-            <button type="submit" class="btn btn-outline-secondary shadow-lg w-75" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
+            <button type="submit" class="btn btn-outline-secondary shadow-lg w-75">
                 Enviar Mensagem
             </button>
         </div>
-
-    </div>
+    </form>
 
 
     <!--RODAPÉ-->
