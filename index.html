@@ -53,12 +53,12 @@
     </nav>
 
     <!--página inicial-->
-    <div class="container home px-4" style="margin-top: 8rem; margin-left: 10rem;" id="home">
+    <div class="container home px-4" style="margin-top: 8rem;" id="home">
         <div class="row gx-5">
             <div class="col-md-6">
                 <img src="imagem/imagemHome.jpg" class="img-thumbnail custom-img-home shadow-sm" alt="imagemHome">
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <h3 class="fs-1">Venha nos conhecer!</h3>
                 <p class="fs-5 mt-3">Somos uma casa de comidas <b>paradisíacas</b> localizada no litoral norte do Rio de
                     Janeiro, estamos ansiosos para recebê-lo.<br> Nosso restaurante está no mercado há mais de 3
@@ -158,8 +158,8 @@
         </div>
     </div>
 
-
     <!--SESSION PRODUTOS-->
+
     <div class="container carousel">
         <h2 class="fs-1 text-center mb-1" style="margin-top: 7rem;">~ PRODUTOS DA <b>CASA</b> ~</h2>
         <div class="introduction-produtos mb-4 mt-2">
@@ -171,45 +171,40 @@
                 <b>BRASILEIRA!</b>
             </p>
         </div>
-        <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
+        <div class="mark-carousel" id="mark-carousel"></div>
+        <div id="carouselExampleCaptions" class="carousel slide mt-5 mb-5 shadow-lg">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagem/produto1.jpg" class="d-block w-100" alt="...">
+                    <img src="imagem/produto1.jpg" class="d-block w-100 h-2 carousel-image" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Cachaça</h5>
-                        <p>Cachaça artesanal de alta qualidade, perfeita para degustar pura ou em drinks.</p>
+                        <h5 class="fs-1">CACHAÇAS</h5>
+                        <p class="fs-5">Produzidas no próprio estabelecimento!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="imagem/produto2.jpg" class="d-block w-100" alt="...">
+                    <img src="imagem/produto2.jpg" class="d-block w-100 carousel-image" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Licores</h5>
-                        <p>Certificação de qualidade.</p>
+                        <h5 class="fs-1">LICORES</h5>
+                        <p class="fs-5">Certificação de qualidade!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="imagem/produto3.jpg" class="d-block w-100" alt="...">
+                    <img src="imagem/produto3.jpg" class="d-block w-100 carousel-image" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Doces de amendoim</h5>
-                        <p>Amendoins frescos, prontos para serem comercializados.</p>
+                        <h5 class="fs-1">DOCES DE AMENDOIM</h5>
+                        <p class="fs-5">Amendoins frescos!</p>
                     </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
+                data-bs-slide="prev"
+                style="background-image: linear-gradient(to left, rgba(34, 34, 34, 0), rgba(34, 34, 34, 1));">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
+                data-bs-slide="next" style="background-image: linear-gradient(to left, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0));
+            ">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
