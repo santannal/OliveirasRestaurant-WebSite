@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!--LINK DOC. CSS-->
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="imagem/icone-restaurante.png" />
 </head>
 
 <body>
@@ -24,15 +25,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-opacity-0 mt-3">
         <div class="container">
             <a class="navbar-brand fs-2" href="#">CASA <span class="text-secondary">OLIVEIRA</span></a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item p-2">
                         <a class="nav-link active fs-5" href="#">Home</a>
                     </li>
@@ -54,13 +53,12 @@
     </nav>
 
     <!--página inicial-->
-
     <div class="container home px-4" style="margin-top: 9rem;" id="home">
         <div class="row gx-5">
-            <div class="col">
-                <img src="imagem/imagemHome.jpg" class="img-thumbnail custom-img-home shadow-sm ml-3" alt="imagemHome">
+            <div class="col-md-6">
+                <img src="imagem/imagemHome.jpg" class="img-thumbnail custom-img-home shadow-sm" alt="imagemHome">
             </div>
-            <div class="col custom-col-home mr-5">
+            <div class="col-md-6">
                 <h3 class="fs-1">Venha nos conhecer!</h3>
                 <p class="fs-5">Somos uma casa de comidas <b>paradisíacas</b> localizada no litoral norte do Rio de
                     Janeiro, estamos ansiosos para recebê-lo.<br> Nosso restaurante está no mercado há mais de 3
@@ -73,12 +71,10 @@
         </div>
     </div>
 
-
     <!--SESSION PRATOS-->
-    <div class="title-food w-100 text-center">
+    <div class="title-food w-100 text-center" style="margin-top: 7rem;">
         <h2 class="fs-1">~ PRATOS DA <b>CASA</b> ~</h2>
     </div>
-
 
     <div class="container-xxl pratos row row-cols-1 row-cols-md-3 g-4 custom-pratos mt-5" id="pratos">
         <div class="col">
@@ -97,10 +93,10 @@
                 <img src="imagem/prato2.jpg" class="img-fluid custom-img-card" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Camarão ao abacaxi</h5>
-                    <p class="card-text">
-                        O camarão ao abacaxi é uma combinação de sabores tropicais, onde a doçura suculenta do abacaxi
-                        complementa a suculência do camarão. Essa mistura cria uma explosão de sabor que é ao mesmo
-                        tempo refrescante e reconfortante, ideal para uma refeição leve e saborosa.</p>
+                    <p class="card-text">O camarão ao abacaxi é uma combinação de sabores tropicais, onde a doçura
+                        suculenta do abacaxi complementa a suculência do camarão. Essa mistura cria uma explosão de
+                        sabor que é ao mesmo tempo refrescante e reconfortante, ideal para uma refeição leve e
+                        saborosa.</p>
                 </div>
             </div>
         </div>
@@ -150,169 +146,168 @@
         </div>
     </div>
     <div class="container-fluid suco">
-        <div class="card mb-3 custom-card-suco shadow">
-            <img src="imagem/suco.webp" class="fluid-card image-card-juice" alt="...">
+        <div class="card mb-3 custom-card-suco shadow" style="transition: all 0.6s ease;">
+            <img src="imagem/suco.webp" class="img-fluid image-card-juice" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Sucos naturais</h5>
                 <p class="card-text">O suco natural é uma opção refrescante e saudável, feita a partir da extração de
                     suco de frutas frescas, sem adição de açúcares ou conservantes. Repleto de nutrientes, vitaminas e
-                    minerais, é uma escolha energizante e revitalizante, perfeita para hidratar o corpo e satisfazer o
-                    paladar com sabores naturais e vibrantes.</p>
+                    minerais, é uma escolha energizante e revitalizante, perfeita para hidratar e nutrir o corpo.</p>
             </div>
         </div>
     </div>
 
+
     <!--SESSION PRODUTOS-->
-
-    <div class="container-xl custom-carousel">
-        <div class="produtos-title">
-            <h2>Você já conhece nossos produtos?</h2>
-            <div class="introduction-produtos mt-4">
-                <p class="fs-5"><span class="fs-1">N</span>o Casa Oliveira, os clientes podem desfrutar de uma
-                    experiência única,
-                    mergulhando na
-                    rica
-                    cultura
-                    brasileira através de uma seleção cuidadosamente escolhida de produtos especializados em cachaça,
-                    licores e doces de amendoim. Aqui está um destaque dos produtos que nós oferecemos:</p>
-            </div>
+    <div class="container carousel">
+        <h2 class="fs-1 text-center mb-1" style="margin-top: 7rem;">~ PRODUTOS DA <b>CASA</b> ~</h2>
+        <div class="introduction-produtos mb-4 mt-2">
+            <p class="fs-4 text-center"><span class="fs-1">N</span>o Casa Oliveira, os clientes podem desfrutar de uma
+                experiência única,
+                mergulhando na
+                rica
+                cultura
+                <b>BRASILEIRA!</b>
+            </p>
         </div>
-
-        <div class="mark-carousel" id="mark-carousel"></div>
-        <div id="carouselExampleCaptions" class="carousel slide mt-5 mb-5 shadow-lg">
+        <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagem/produto1.jpg" class="d-block w-100 h-2 carousel-image" alt="...">
+                    <img src="imagem/produto1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="fs-1">CACHAÇAS</h5>
-                        <p class="fs-5">Produzidas no próprio estabelecimento!</p>
+                        <h5>Cachaça</h5>
+                        <p>Cachaça artesanal de alta qualidade, perfeita para degustar pura ou em drinks.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="imagem/produto2.jpg" class="d-block w-100 carousel-image" alt="...">
+                    <img src="imagem/produto2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="fs-1">LICORES</h5>
-                        <p class="fs-5">Certificação de qualidade!</p>
+                        <h5>Licores</h5>
+                        <p>Certificação de qualidade.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="imagem/produto3.jpg" class="d-block w-100 carousel-image" alt="...">
+                    <img src="imagem/produto3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5 class="fs-1">DOCES DE AMENDOIM</h5>
-                        <p class="fs-5">Amendoins frescos!</p>
+                        <h5>Doces de amendoim</h5>
+                        <p>Amendoins frescos, prontos para serem comercializados.</p>
                     </div>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev"
-                style="background-image: linear-gradient(to left, rgba(34, 34, 34, 0), rgba(34, 34, 34, 1));">
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next" style="background-image: linear-gradient(to left, rgba(34, 34, 34, 1), rgba(34, 34, 34, 0));
-                ">
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
 
+
     <!-- SESSION ESTABELECIMENTO-->
-
-
     <div class="container-fluid local-session mt-5" id="estabelecimento">
-        <div class="title-estabelecimento fs-1 mt-5">
-            <h1>SOBRE O NOSSO <u>ESTABELECIMENTO</u></h1>
+        <div class="text-center fs-1 mt-5">
+            <h1>SOBRE O NOSSO ESTABELECIMENTO</h1>
         </div>
-        <div class="local-div">
-            <div class="place-figure">
-                <figure class="figure">
-                    <img src="imagem/vistaRestaurante.jpg" class="figure-img-restaurant img-fluid rounded" alt="...">
-                </figure>
-            </div>
-            <div class="local-letters">
-                <div class="mt-5 fs-2 ml-5">
-                    - VISTAS INCRÍVEIS -
+        <div class="container mt-2">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <figure class="figure">
+                        <img src="imagem/vistaRestaurante.jpg" class="shadow img-fluid rounded"
+                            alt="Vista do Restaurante">
+                    </figure>
                 </div>
-                <p class="place-text">Nosso espaço conta com uma vista incrível do mar.
-                </p>
-            </div>
-        </div>
-
-        <div class="local-div">
-            <div class="local-letters">
-                <div class="fs-2 ml-3" style="margin-top: 6rem;">
-                    - ÁREAS DE DESCANSO -
+                <div class="col-md-6">
+                    <div class="fs-2">
+                        - VISTAS INCRÍVEIS
+                    </div>
+                    <p>Nosso espaço conta com uma vista incrível do mar.</p>
                 </div>
-                <p class="place-text-left">Venha ter aquele "clássico" descanso pós-almoço em nossas acomodações.
-                </p>
             </div>
-            <div class="place-figure" style="margin-right: 9rem">
-                <figure class="figure">
-                    <img src="imagem/lazerComercio.jpg" class="figure-img-restaurant img-fluid rounded" alt="...">
-                </figure>
-            </div>
-        </div>
 
-
-        <div class="local-div">
-            <div class="place-figure">
-                <figure class="figure">
-                    <img src="imagem/cozinheiro1.jpg" class="figure-img-restaurant img-fluid rounded" alt="...">
-                </figure>
-            </div>
-            <div class="local-letters mr-5">
-                <div class="mt-5 fs-2 ml-3">
-                    - ÓTIMOS COZINHEIROS -
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                    <figure class="figure">
+                        <img src="imagem/lazerComercio.jpg" class="shadow img-fluid rounded" alt="Área de Lazer">
+                    </figure>
                 </div>
-                <p class="place-text" style="margin-left: -6%;">Nossos profissionais são altamente treinados e
-                    reconhecidos.
-                </p>
-            </div>
-        </div>
-
-        <div class="local-div mt-5 mb-5">
-            <div class="local-letters" style="margin-left: 10rem;">
-                <div class="fs-2 ml-5" style="margin-top: 6rem;">
-                    - FOCO NA QUALIDADE -
+                <div class="col-md-6 order-md-1">
+                    <div class="fs-2 text-end mr-5">
+                        ÁREAS DE DESCANSO -
+                    </div>
+                    <p>Venha ter aquele "clássico" descanso pós-almoço em nossas acomodações.</p>
                 </div>
-                <p class="place-text-left">Nosso restaurante possui certificado de qualidade reconhecido nacionalmente!
-                </p>
             </div>
-            <div class="place-figure" style="margin-right: 9rem">
-                <figure class="figure-selo">
-                    <img src="imagem/images.png" class="figure-img-qualidade img-fluid rounded mt-5" alt="...">
-                </figure>
+
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <figure class="figure">
+                        <img src="imagem/cozinheiro1.jpg" class="shadow img-fluid rounded" alt="Cozinheiro">
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <div class="fs-2">
+                        - ÓTIMOS COZINHEIROS
+                    </div>
+                    <p>Nossos profissionais são altamente treinados e reconhecidos.</p>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                    <figure class="figure" style="margin-bottom: 10rem;">
+                        <img src="imagem/qualidade.png" class="img-fluid rounded shadow" alt="Certificado de Qualidade">
+                    </figure>
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <div class="fs-2 text-center">
+                        FOCO NA QUALIDADE -
+                    </div>
+                    <p>Nosso restaurante possui certificado de qualidade reconhecido nacionalmente!</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <!--CONTATOS-->
-    <form action="send_email.php" method="post" class="container-md contato-session shadow-lg rounded p-5 bg-light"
-        id="contact" style="margin-top: 150px;">
-        <div class="fs-3">ENTRE EM CONTATO CONOSCO!</div>
-        <div class="row">
-            <div class="col">
-                <div class="fs-5 mt-4 mb-2">Nome</div>
-                <input type="text" name="nome" placeholder="Nome Completo" class="form-control mb-0" required />
+
+    <!--CONTACT-->
+    <div class="contato-session py-5">
+        <form action="send_email.php" method="post" class="container-md shadow-lg rounded p-5 bg-light" id="contact">
+            <div class="text-center fs-3 mb-4">ENTRE EM CONTATO CONOSCO!</div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="fs-5 mb-2">Nome</div>
+                    <input type="text" name="nome" placeholder="Nome Completo" class="form-control" required />
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="fs-5 mb-2">Email</div>
+                    <input type="email" name="email" placeholder="Email" class="form-control" required />
+                </div>
             </div>
-            <div class="col">
-                <div class="fs-5 mt-4 mb-2">Email</div>
-                <input type="email" name="email" placeholder="Email" class="form-control mb-0" required />
+            <div class="fs-5 mt-4 mb-2">Mensagem</div>
+            <div class="input-group mb-4">
+                <textarea name="mensagem" class="form-control" rows="4" placeholder="Insira sua mensagem..."
+                    required></textarea>
             </div>
-        </div>
-        <div class="fs-5 mt-4 mb-2">Mensagem</div>
-        <div class="input-group" style="height: 120px;">
-            <textarea name="mensagem" style="height: 120px;" class="form-control text-left"
-                aria-label="Sizing example input" placeholder="Insira sua mensagem..." required></textarea>
-        </div>
-        <div class="area-botao d-flex justify-content-center mt-5 mb-1">
-            <button type="submit" class="btn btn-outline-secondary shadow-lg w-75">
-                Enviar Mensagem
-            </button>
-        </div>
-    </form>
+            <div class="text-center">
+                <button type="submit" class="btn btn-outline-secondary shadow-lg w-75">
+                    Enviar Mensagem
+                </button>
+            </div>
+        </form>
+    </div>
 
 
     <!--RODAPÉ-->

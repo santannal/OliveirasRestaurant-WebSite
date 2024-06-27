@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(40deg, #d5bda0, #d6ccc2, #edede9, #f5ebe0, #fff);
+    background: linear-gradient(50deg, #d5bda0, #d6ccc2, #fff, #f8e2ca, #e8be77);
     background-size: 400% 400%;
     animation: gradientBackground 10s ease infinite;
     z-index: -1;
@@ -62,11 +62,15 @@
 }
 
 .custom-card-suco:hover {
-    padding: 2px;
+    padding: 3px;
+}
+
+.card.prato {
+    transition: all 0.6s ease;
 }
 
 .card.prato:hover {
-    padding: 2px;
+    padding: 3px;
 }
 
 .image-card-juice {
@@ -97,34 +101,37 @@
     height: 350px;
 }
 
-.local-session {
-    background-color: white;
-    width: 98.7vw;
-    align-items: space-around;
-    justify-content: center;
-    padding: 10px;
-}
-
-.local-div {
-    display: flex;
-}
-
 .local-letters {
     margin: auto;
     margin-left: 7rem;
 }
 
-.place-text {
-    word-break: inherit;
-    margin-left: 0.8rem;
-    text-align: center;
+.local-session {
+    background-color: #f9f9f9;
+    padding: 50px 0;
 }
 
-.place-text-left {
-    word-break: inherit;
-    margin-left: -3.25rem;
-    text-align: center;
+.local-div {
+    margin-bottom: 50px;
 }
+
+.place-text,
+.place-text-left {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+
+    .place-text,
+    .place-text-left {
+        font-size: 1rem;
+    }
+
+    .fs-2 {
+        font-size: 1.5rem;
+    }
+}
+
 
 .figure {
     margin-top: 7rem;
